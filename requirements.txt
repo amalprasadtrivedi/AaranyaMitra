@@ -1,0 +1,44 @@
+# ============================================================
+# Requirements file for AaranyaMitra Frontend (Streamlit)
+# This file lists all Python dependencies required to run
+# the frontend application.
+#
+# Install using:
+#   pip install -r requirements.txt
+# ============================================================
+
+# ---------------------------
+# Core Framework
+# ---------------------------
+streamlit==1.38.0          # Frontend framework for building interactive dashboards
+
+# ---------------------------
+# Data Handling
+# ---------------------------
+pandas==2.2.3              # For reading and processing CSV datasets
+numpy==1.26.4              # Numerical operations, efficient arrays
+
+# ---------------------------
+# Visualization
+# ---------------------------
+matplotlib==3.9.2          # For charts (bar, pie, line) integrated into Streamlit
+
+# ---------------------------
+# Machine Learning Models
+# ---------------------------
+scikit-learn==1.5.1        # Required for loading ML models (joblib pickles)
+
+# ---------------------------
+# Utility Libraries
+# ---------------------------
+joblib==1.4.2              # For loading pre-trained .pkl ML models
+
+# ---------------------------
+# Optional Enhancements (safe to remove if not needed)
+# ---------------------------
+# pillow==10.4.0            # For image handling (if adding custom logos/icons later)
+# seaborn==0.13.2           # For prettier charts (optional)
+
+# ============================================================
+# End of requirements.txt
+# ============================================================
