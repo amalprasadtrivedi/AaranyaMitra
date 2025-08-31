@@ -1,0 +1,7 @@
+# runtime.txt
+# This file specifies the Python version for Streamlit Cloud deployment.
+# Using Python 3.10 because it is stable and all ML/AI packages (numpy, pandas, scikit-learn, matplotlib, etc.)
+# provide prebuilt wheels for faster installation. 
+# Newer versions like 3.12 or 3.13 may cause slow builds or compatibility errors.
+
+python-3.10
