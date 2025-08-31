@@ -10,6 +10,7 @@ It provides:
 Author: Amal Prasad Trivedi
 """
 
+import os
 import streamlit as st
 
 
@@ -175,3 +176,4 @@ st.sidebar.markdown(
 # Footer
 st.markdown("---")
 st.caption("© 2025 AaranyaMitra | Built with ❤️ by Amal Prasad Trivedi")
+
