@@ -135,3 +135,28 @@ pip install -r backend/requirements.txt
 
 # 3) Install frontend dependencies
 pip install -r frontend/requirements.txt
+```
+
+## ▶️ Running the Project
+
+You can run **AaranyaMitra** in two ways:  
+- using the provided **`run.sh` script** (recommended), or  
+- starting backend and frontend manually in separate terminals.
+
+---
+
+### Option A — Run with `run.sh`
+
+```bash
+bash run.sh
+```
+
+### Option B — Run manually in two terminals
+- Terminal 1 (backend):
+  ```bash
+  uvicorn backend.main:app --reload --port 8000
+  ```
+- Terminal 2 (frontend)::
+  ```bash
+  streamlit run frontend/Home.py --server.port 8501
+  ```
