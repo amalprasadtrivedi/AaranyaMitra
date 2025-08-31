@@ -1,44 +1,32 @@
-# ============================================================
-# Requirements file for AaranyaMitra Frontend (Streamlit)
-# This file lists all Python dependencies required to run
-# the frontend application.
-#
-# Install using:
-#   pip install -r requirements.txt
-# ============================================================
+# ============================
+# Core Dependencies
+# ============================
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+numpy>=1.26.0
+pandas>=2.1.0
+scikit-learn>=1.5.0
+joblib>=1.3.0
+matplotlib>=3.8.0
 
-# ---------------------------
-# Core Framework
-# ---------------------------
-streamlit==1.38.0          # Frontend framework for building interactive dashboards
+# ============================
+# Backend (FastAPI)
+# ============================
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
 
-# ---------------------------
-# Data Handling
-# ---------------------------
-pandas==2.2.3              # For reading and processing CSV datasets
-numpy==1.26.4              # Numerical operations, efficient arrays
+# ============================
+# Frontend (Streamlit)
+# ============================
+streamlit>=1.35.0
 
-# ---------------------------
-# Visualization
-# ---------------------------
-matplotlib==3.9.2          # For charts (bar, pie, line) integrated into Streamlit
+# ============================
+# Testing
+# ============================
+pytest>=8.2.0
+requests>=2.31.0
 
-# ---------------------------
-# Machine Learning Models
-# ---------------------------
-scikit-learn==1.5.1        # Required for loading ML models (joblib pickles)
-
-# ---------------------------
-# Utility Libraries
-# ---------------------------
-joblib==1.4.2              # For loading pre-trained .pkl ML models
-
-# ---------------------------
-# Optional Enhancements (safe to remove if not needed)
-# ---------------------------
-# pillow==10.4.0            # For image handling (if adding custom logos/icons later)
-# seaborn==0.13.2           # For prettier charts (optional)
-
-# ============================================================
-# End of requirements.txt
-# ============================================================
+# ============================
+# Optional (if using YAML/OpenAPI docs)
+# ============================
+pyyaml>=6.0.0
